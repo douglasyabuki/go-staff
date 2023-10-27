@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Douglas Yuji Yabuki<douglasyabuki@gmail.com>",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,7 +13,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.17.0"
+    "react-router-dom": "^6.17.0",
+    "vite-tsconfig-paths": "^4.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -28,6 +30,7 @@
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3.3.3",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }

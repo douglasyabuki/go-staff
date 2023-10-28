@@ -9,7 +9,7 @@ export default function Navbar() {
         <SidebarButton />
         <Logo />
       </div>
-      <SettingsButton></SettingsButton>
+      <SettingsButton />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 interface ThemeContextInterface {
   darkMode: boolean;
@@ -12,7 +12,11 @@ interface ThemeProviderInterface {
 export const ThemeContext = createContext({} as ThemeContextInterface);
 
 export function ThemeProvider({ children }: ThemeProviderInterface) {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    handleThemeSwitch();
+  }, []);
 
   const handleThemeSwitch = () => {
     setDarkMode((prevState) => {

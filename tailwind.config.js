@@ -2,6 +2,7 @@
 
 export default {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     colors: {
       'darker-blue-90': '#002346',

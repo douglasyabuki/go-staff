@@ -17,7 +17,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       <div
         className={`${
           isOpen ? `translate-x-0` : `-translate-x-[400px]`
-        } absolute top-0 z-[42] flex h-screen w-[400px] transform-gpu flex-col bg-dark-blue-80 shadow-md shadow-transparent-black duration-200 ease-in-out`}
+        } absolute top-0 z-[42] flex h-screen w-[400px] transform-gpu flex-col bg-dark-blue-80 shadow-md shadow-transparent-black duration-200 ease-in-out dark:bg-gocn-grey-primary`}
       >
         <div className="flex justify-end p-4">
           <button onClick={onClose} className="hover:animate-pulse">

@@ -12,7 +12,7 @@ export default function ThemeSwitcher() {
       <div
         className={`${
           darkMode ? `translate-x-full` : `translate-x-0`
-        } absolute flex h-6 w-6 transform-gpu items-center justify-center rounded-full bg-white shadow-sm shadow-transparent-black duration-200 dark:bg-darker-blue-90`}
+        } absolute flex h-6 w-6 transform-gpu items-center justify-center rounded-full bg-white shadow-sm shadow-transparent-black duration-200 dark:bg-gocn-grey-primary`}
       >
         {darkMode ? <MoonIcon /> : <SunIcon />}
       </div>

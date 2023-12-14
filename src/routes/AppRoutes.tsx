@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
+import DesignSystem from '@/pages/design-system/DesignSystem';
 
 interface RouteItem {
   id: number;
@@ -17,6 +18,13 @@ const routeList: RouteItem[] = [
     element: <Home />,
     allowedRoles: [''],
   },
+  {
+    id: 1,
+    navigate: false,
+    path: '/design-system',
+    element: <DesignSystem />,
+    allowedRoles: [''],
+  },
 ];
 
 export const AppRoutes = () => {
@@ -25,7 +33,7 @@ export const AppRoutes = () => {
       {routeList.map((item) => (
         <Route
           key={item.id}
-          path="*"
+          path={item.path}
           element={item.navigate ? <Navigate to={{ pathname: item.path }} /> : item.element}
         ></Route>
       ))}

@@ -21,9 +21,9 @@ const routeList: RouteItem[] = [
   },
   {
     key: 1,
-    path: '',
-    label: '',
-    description: '',
+    path: '/design-system',
+    label: 'Design System',
+    description: 'Made from workers to workers. Feel free to "steal" anything from here.',
   },
   {
     key: 2,

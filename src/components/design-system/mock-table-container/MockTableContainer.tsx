@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { MockAPIResponse } from '@/utils/mock-api-response';
 import { ArrowDownIcon } from '@/utils/Icons';
-
+import MockTableRow from './mock-table/mock-table-row/MockTableRow';
 export interface MockTableContainerProps {
   tableData: MockAPIResponse[];
 }
@@ -53,18 +53,13 @@ export default function MockTableContainer({ tableData }: MockTableContainerProp
             </thead>
             <tbody className="">
               {tableData?.length > 0 &&
-                tableData.map((singleRow, singleRowId) => (
-                  <tr
-                    className={`${singleRowId % 2 === 0 ? `bg-grey-5` : `bg-white`} ${
-                      singleRowId + 1 === tableData.length &&
-                      `[&>*:first-child]:rounded-bl-lg [&>*:last-child]:rounded-br-lg`
-                    } h-12 overflow-hidden hover:bg-grey-20`}
-                    key={singleRowId}
-                  >
-                    {Object.values(singleRow).map((fieldValue, fieldValueId) => (
-                      <td key={fieldValueId}>{fieldValue}</td>
-                    ))}
-                  </tr>
+                tableData.map((singleRow, rowId) => (
+                  <MockTableRow
+                    rowData={singleRow}
+                    tableLength={tableData.length}
+                    rowId={rowId}
+                    key={rowId}
+                  ></MockTableRow>
                 ))}
             </tbody>
           </table>

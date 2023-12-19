@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { MockAPIResponse } from '@/utils/mock-api-response';
 import { ArrowDownIcon } from '@/utils/Icons';
 import MockTableRow from './mock-table/mock-table-row/MockTableRow';
+import MockTableHeader from './mock-table/mock-table-header/MockTableHeader';
 export interface MockTableContainerProps {
   tableData: MockAPIResponse[];
 }
@@ -41,16 +42,7 @@ export default function MockTableContainer({ tableData }: MockTableContainerProp
           <table
             className={`relative w-full min-w-max transform-gpu text-center transition-transform duration-200 xl:table-fixed`}
           >
-            <thead className="text-sm font-bold">
-              <tr className="h-12 bg-blue-20 [&>*:first-child]:rounded-tl-lg [&>*:last-child]:rounded-tr-lg">
-                {headerFields?.length > 0 &&
-                  headerFields.map((headerField, headerFieldId) => (
-                    <th className="w-28" key={headerFieldId}>
-                      {headerField}
-                    </th>
-                  ))}
-              </tr>
-            </thead>
+            <MockTableHeader headerFields={headerFields}></MockTableHeader>
             <tbody className="">
               {tableData?.length > 0 &&
                 tableData.map((singleRow, rowId) => (

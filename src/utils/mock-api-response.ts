@@ -19,14 +19,14 @@ export const mockApiResponse: MockAPIResponse[] = [
     age: 32,
     gender: 'Male',
     height: 175,
-    weight: 75,
+    weight: 100,
   },
   {
     name: 'Charlie',
     age: 45,
     gender: 'Non-Binary',
     height: 170,
-    weight: 68,
+    weight: 85,
   },
   {
     name: 'Diana',

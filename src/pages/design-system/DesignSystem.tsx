@@ -1,5 +1,5 @@
 import MockFormulatedTableContainer from '@/components/design-system/mock-formulated-table-container/MockFormulatedTableContainer';
-import MockTable from '@/components/design-system/mock-table-container/MockTableContainer';
+import MockTableContainer from '@/components/design-system/mock-table-container/MockTableContainer';
 import { mockApiResponse } from '@/utils/mock-api-response';
 
 export default function DesignSystem() {
@@ -15,10 +15,10 @@ export default function DesignSystem() {
           </h2>
         </div>
       </div>
-      <div className="flex h-full w-screen flex-col items-center justify-start gap-2 px-4 py-20">
+      <div className="flex h-auto min-h-max w-screen flex-col items-start justify-start gap-2 px-4 py-20">
         <div className="flex h-auto w-full flex-col items-center justify-start gap-2 py-2">
           <h3>This is a table generated dynamically from a mockAPIResponse.</h3>
-          {fetchedData && <MockTable tableData={fetchedData}></MockTable>}
+          {fetchedData && <MockTableContainer tableData={fetchedData}></MockTableContainer>}
         </div>
         <div className="flex h-auto w-full flex-col items-center justify-start gap-2 py-2">
           <h3>This is a formulated table</h3>

@@ -39,14 +39,14 @@ export default function MockFormulatedTableContainer({
   return (
     <div
       className={`${
-        toggle ? `` : `max-h-12 cursor-pointer hover:bg-blue-10`
-      } flex h-auto w-full select-none flex-col rounded-md bg-white shadow-sm shadow-transparent-black transition-colors duration-200 `}
+        toggle ? `` : `max-h-12 cursor-pointer hover:bg-blue-10 dark:hover:bg-grey-60`
+      } flex h-auto w-full select-none flex-col rounded-md bg-white shadow-sm shadow-transparent-black transition-colors duration-200 dark:bg-gocn-grey-secondary `}
       onClick={() => {
         !toggle && setToggle(true);
       }}
     >
       <div className="flex h-12 w-full items-center justify-between px-4">
-        <h4 className="text-sm font-bold text-dark-blue-80">
+        <h4 className="text-sm font-bold text-dark-blue-80 dark:text-grey-5">
           {toggle ? `Hi! I'm an open table!` : `Hi! I'm a closed table`}
         </h4>
         <div

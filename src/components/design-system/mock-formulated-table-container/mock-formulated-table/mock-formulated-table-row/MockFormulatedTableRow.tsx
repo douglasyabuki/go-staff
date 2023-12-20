@@ -14,7 +14,7 @@ export default function MockFormulatedTableRow({
 }: MockFormulatedTableRowProps) {
   return (
     <tr
-      className={`${rowId % 2 === 0 ? `bg-grey-5` : `bg-white`} ${
+      className={`${rowId % 2 === 0 ? `bg-grey-5 dark:bg-grey-40` : `bg-white dark:bg-grey-30`} ${
         rowId + 1 === tableLength &&
         `[&>*:first-child]:rounded-bl-lg [&>*:last-child]:rounded-br-lg`
       } h-12 overflow-hidden hover:bg-grey-20`}

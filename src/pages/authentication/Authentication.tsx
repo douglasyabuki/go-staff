@@ -8,8 +8,8 @@ export default function Authentication() {
   const { signIn } = useContext(AuthContext);
 
   return (
-    <div className="bg-gocn-grey-primary flex h-screen w-screen items-center justify-center overflow-hidden">
-      <div className="bg-gocn-grey-secondary relative flex h-[500px] w-[400px] flex-col divide-y-[1px] divide-grey-60 rounded-lg px-8 py-4 shadow-md shadow-transparent-black">
+    <div className="flex h-screen w-screen items-center justify-center overflow-hidden bg-gocn-grey-primary px-4">
+      <div className="relative flex h-[500px] w-[400px] flex-col divide-y-[1px] divide-grey-60 rounded-lg bg-gocn-grey-secondary px-8 py-4 shadow-md shadow-transparent-black">
         <div className="flex h-[80px] justify-center">
           <Logo />
         </div>
@@ -25,7 +25,7 @@ export default function Authentication() {
         </div>
         <div className="flex h-[99px] items-center justify-center pt-4">
           <button
-            className="hover:border-gocn-green-secondary hover:text-gocn-green-secondary w-40 rounded-md border-[1px] px-4 py-3 font-bold text-white transition-colors duration-200"
+            className="w-40 rounded-md border-[1px] px-4 py-3 font-bold text-white transition-colors duration-200 hover:border-gocn-green-secondary hover:text-gocn-green-secondary"
             onClick={signIn}
           >
             Sign in

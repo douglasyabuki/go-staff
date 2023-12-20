@@ -94,7 +94,7 @@ export const FilterListIcon = () => {
     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
       <path
         d="M8.83333 15H12.1667V13.3333H8.83333V15ZM3 5V6.66667H18V5H3ZM5.5 10.8333H15.5V9.16667H5.5V10.8333Z"
-        fill="#007582"
+        className="fill-gocn-aqua-70 dark:fill-white"
       />
     </svg>
   );
@@ -493,6 +493,25 @@ export const SunIcon = () => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EyeIcon = () => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M22 12C20.0039 8.41319 16.2731 6 12 6C7.72693 6 3.99609 8.41319 2 12C3.99609 15.5868 7.72693 18 12 18C16.2731 18 20.0039 15.5868 22 12Z"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+        className="stroke-black dark:stroke-white"
+      />
+      <path
+        d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+        className="stroke-black dark:stroke-white"
       />
     </svg>
   );

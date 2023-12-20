@@ -38,7 +38,7 @@ export default function SettingsButton() {
           >
             <Settings />
           </Dropdown>,
-          document.getElementById('portal-root')!,
+          document.getElementById('root')!,
         )}
     </>
   );

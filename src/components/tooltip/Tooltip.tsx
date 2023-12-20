@@ -42,6 +42,6 @@ export default function Tooltip({
     <TooltipContainer x={tooltipX} y={tooltipY} contentRef={ref}>
       {children}
     </TooltipContainer>,
-    document.getElementById('portal-root')!,
+    document.getElementById('root')!,
   );
 }

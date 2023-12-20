@@ -16,7 +16,7 @@ export default function SidebarButton() {
       </button>
       {createPortal(
         <Sidebar isOpen={toggle} onClose={() => setToggle(false)}></Sidebar>,
-        document.getElementById('portal-root')!,
+        document.getElementById('root')!,
       )}
     </>
   );

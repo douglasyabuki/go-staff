@@ -16,7 +16,11 @@ export default function Authentication() {
         <div className="flex h-[300px] flex-col gap-4 py-8">
           <div className="flex flex-col gap-2">
             <p className="font-bold text-white">E-mail</p>
-            <input className="w-full rounded-md px-4 py-3 focus:outline-none" type="email" />
+            <input
+              className="w-full rounded-md px-4 py-3 focus:outline-none"
+              type="email"
+              defaultValue={'user@gocn.com.br'}
+            />
           </div>
           <div className="flex flex-col gap-2">
             <p className="font-bold text-white">Password</p>
